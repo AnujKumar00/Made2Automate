@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <link rel="Icon" href="img/logo.jpg">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    
+    <link rel="stylesheet" href="addproduct.css" />
+  </head>
+  <body>
+    <section class="container">
+      <header>Add Product</header>
+      <div><img id="uploadimage"  src="img/icon_uploadimage.png" alt=""> </div>
+      <div class="form"> <button>upload image</button> </div>
+     
+      <form action="#" class="form">
+        <div class="input-box">
+          <label>Product Name</label>
+          <input type="text" placeholder="Add product name here." required />
+        </div>
+
+        <div class="input-box">
+          <label>Product Id</label>
+          <input type="text" placeholder="Enter product id" required />
+        </div>
+
+        <div class="input-box">
+            <label>Manufacturer Name</label>
+            <input type="text" placeholder="Enter Manufacturer name" required />
+          </div>
+
+        <div class="column">
+          <div class="input-box">
+            <label>Product Quantity And Category</label>
+            <input type="number" placeholder="Enter Quantity" required />
+          </div>
+          
+        </div>
+
+          
+          <div class="column">
+            <div class="select-box">
+               
+              <select>
+                
+                <option hidden>Select Category</option>
+                <option>new stock</option>
+                <option>used stock</option>
+              </select>
+            </div>
+        </div>
+        <button>Save changes</button>
+        <button>cancel</button>
+      </form>
+    </section>
+  </body>
+</html>

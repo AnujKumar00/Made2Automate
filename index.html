@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="Icon" href="img/logo.jpg">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MADE2AUTOMATE</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a class="logo" href="#">MADE2AUTOMATE</a>
+        <ul class="menu-links">
+          
+          <li><a href="#"> Home</a></li>
+          <li><a href="addproduct.html" target="_blank">Add Product</a></li>
+          <li><a href="dashboard.html" target="_blank">Dashboard</a></li>
+          <li><a href="cart.html" target="_blank">Cart</a></li>
+          <li><a href="#">Order listing</a></li>
+          <li><a href="login.html" target="_blank"> <img id="login" src="/img/icon_logo.png"> </a></li>
+          
+        </ul>
+        <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+      </nav>
+    </header>
+
+    <section class="hero-section">
+      <div class="content">
+        <h2>Buy Automation Online!!
+            </h2>
+        <p>
+            Sensors, Relays, Switches & Solutions
+        </p>
+        <button>Shop Now</button>
+      </div>
+    </section>
+
+    <script>
+      const header = document.querySelector("header");
+      const hamburgerBtn = document.querySelector("#hamburger-btn");
+      const closeMenuBtn = document.querySelector("#close-menu-btn");
+
+      // Toggle mobile menu on hamburger button click
+      hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
+
+      // Close mobile menu on close button click
+      closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
+    </script>
+    
+  </body>
+</html>
